@@ -43,6 +43,7 @@ async def main():
         parse_mode=enums.ParseMode.HTML,
         skip_updates=False,
         proxy=get_proxy(),
+        password=env.str("PASSWORD", None),
     )
 
     # For security purposes
