@@ -18,6 +18,8 @@ RUN pip3 install --no-warn-script-location --no-cache-dir -U uvloop -r requireme
 
 ENV TZ=Europe/Moscow
 
+RUN git config --global --add safe.directory '*'
+
 EXPOSE 8080
 
 CMD ["python3", "main.py"]
