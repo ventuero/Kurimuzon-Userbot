@@ -8,3 +8,5 @@ services:
     command: "python3 main.py"
     volumes:
       - .:/app
+    stdin_open: true
+    tty: true
